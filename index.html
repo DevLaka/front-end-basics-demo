@@ -4,102 +4,138 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Front End Basics Demo</title>
+    <title>Front End Basics Demo Website</title>
   </head>
   <body>
-    <h1>This is a H1 Heading</h1>
-    <a href="https://www.google.com">Google</a>
-    <a href="aboutMe.html">About Me</a>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
-      sed do eiusmod <br />
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure <br />
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-      nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-      culpa qui officia deserunt mollit anim id est laborum.
-      <sub
-        >Lorem Ipsum taken from
-        <a href="https://www.lipsum.com/">this page.</a>
-      </sub>
-    </p>
-    <hr />
-    <h2>This is a H2 Heading</h2>
-    <ol>
-      <li>List Item one</li>
-      <!-- Example of  nesting lists -->
-      <ul>
-        <li>List Item one</li>
-        <li>List Item two</li>
-        <li>List Item three</li>
-      </ul>
-      <li>List Item two</li>
-      <li>List Item three</li>
-    </ol>
-    <ul>
-      <li>List Item one</li>
-      <li>List Item two</li>
-      <li>List Item three</li>
-    </ul>
-    <hr />
-    <h2>This is a H2 Heading</h2>
-    <img src="images/cactus.jpg" alt="local image - cactus" />
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. <br />
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat. <sup> Duis aute irure dolor </sup> in
-      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-      pariatur. <br />
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum
-    </p>
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Lamborghini_Aventador_S_coupe_IMG_2926.jpg/220px-Lamborghini_Aventador_S_coupe_IMG_2926.jpg"
-      alt="remote image - Lamborghini"
-    />
-    <h1>Section With Table</h1>
-    <table>
-      <thead>
-        <tr>
-          <th rowspan="2">Item</th>
-          <th colspan="2">Price (Rs.)</th>
-          <th rowspan="2">Available quantitiy (Kg)</th>
-        </tr>
-        <tr>
-          <th>Rupees</th>
-          <th>Dollars</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Carrot</td>
-          <td>50</td>
-          <td>5</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>Leaks</td>
-          <td>20</td>
-          <td>2</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Rice</td>
-          <td>100</td>
-          <td>10</td>
-          <td>5</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>Total</td>
-          <td>170</td>
-          <td>17</td>
-          <td>12</td>
-        </tr>
-      </tfoot>
-    </table>
+    <header>
+      <h1>Front End Basics Demo Website</h1>
+
+      <nav>
+        <a href="aboutMe.html">About Me</a>
+        <a href="https://www.google.com">Visit Google</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Main Content</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+          sed do eiusmod <br />
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure <br />
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+          in culpa qui officia deserunt mollit anim id est laborum.
+          <sub
+            >Lorem Ipsum taken from
+            <a href="https://www.lipsum.com/">this page.</a>
+          </sub>
+        </p>
+        <hr />
+      </section>
+
+      <section>
+        <h2>Lists Demo</h2>
+        <ol>
+          <li>List Item one</li>
+          <!-- Example of  nesting lists -->
+          <ul>
+            <li>List Item one</li>
+            <li>List Item two</li>
+            <li>List Item three</li>
+          </ul>
+          <li>List Item two</li>
+          <li>List Item three</li>
+        </ol>
+        <ul>
+          <li>List Item one</li>
+          <li>List Item two</li>
+          <li>List Item three</li>
+        </ul>
+        <hr />
+      </section>
+
+      <section>
+        <h2>Image Demo</h2>
+        <h3>Local Image</h3>
+        <img src="images/cactus.jpg" alt="local image - cactus" />
+        <h3>Remote Image</h3>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Lamborghini_Aventador_S_coupe_IMG_2926.jpg/220px-Lamborghini_Aventador_S_coupe_IMG_2926.jpg"
+          alt="remote image - Lamborghini"
+        />
+        <hr />
+      </section>
+
+      <section>
+        <h1>Table Demo</h1>
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">Item</th>
+              <th colspan="2">Price (Rs.)</th>
+              <th rowspan="2">Available quantitiy (Kg)</th>
+            </tr>
+            <tr>
+              <th>Rupees</th>
+              <th>Dollars</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Carrot</td>
+              <td>50</td>
+              <td>5</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Leaks</td>
+              <td>20</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Rice</td>
+              <td>100</td>
+              <td>10</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td>170</td>
+              <td>17</td>
+              <td>12</td>
+            </tr>
+          </tfoot>
+        </table>
+        <hr />
+      </section>
+
+      <section>
+        <h2>List of Sementic Elements</h2>
+        <ul>
+          <li>section</li>
+          <li>article</li>
+          <li>nav</li>
+          <li>main</li>
+          <li>header</li>
+          <li>footer</li>
+          <li>aside</li>
+          <li>summary</li>
+          <li>details</li>
+        </ul>
+        <hr />
+      </section>
+    </main>
   </body>
+  <footer>
+    <nav>
+      <a href="aboutMe.html">About Me</a>
+      <a href="https://www.google.com">Visit Google</a>
+    </nav>
+  </footer>
 </html>
