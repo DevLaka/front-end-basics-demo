@@ -14,7 +14,7 @@
     </header>
     <main>
       <h2>Forms</h2>
-      <form action="">
+      <form action="/notdefined">
         <div>
           <label for="un">username:</label>
           <input id="un" type="text" placeholder="username" />
@@ -29,11 +29,22 @@
         </div>
         <!-- second method of adding labels -->
         <div>
-          <label> number:
+          <label>
+            number:
             <input type="number" placeholder="number" />
           </label>
         </div>
+        <!-- This button inside form submits the form-->
+        <button>Submit</button>
+        <!-- This button inside form submits the form-->
+        <button type="submit">Submit</button>
+        <!-- This button inside form submits the form-->
+        <input type="submit" value="click me" />
+        <!-- This button inside form does not submit the form-->
+        <button type="button">Does not Submit</button>
       </form>
+      <!-- This button outside form does not submit the form-->
+      <button>Submit</button>
     </main>
   </body>
 </html>
