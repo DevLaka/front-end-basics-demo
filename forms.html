@@ -15,10 +15,24 @@
     <main>
       <h2>Forms</h2>
       <form action="">
-        <input type="text" placeholder="username">
-        <input type="password" placeholder="password">
-        <input type="color">
-        <input type="number" placeholder="number">
+        <div>
+          <label for="un">username:</label>
+          <input id="un" type="text" placeholder="username" />
+        </div>
+        <div>
+          <label for="pass">password:</label>
+          <input id="pass" type="password" placeholder="password" />
+        </div>
+        <div>
+          <label for="color">color:</label>
+          <input id="color" type="color" />
+        </div>
+        <!-- second method of adding labels -->
+        <div>
+          <label> number:
+            <input type="number" placeholder="number" />
+          </label>
+        </div>
       </form>
     </main>
   </body>
