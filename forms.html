@@ -121,6 +121,37 @@
         </form>
         <br />
       </section>
+      <section>
+        <h2>Form with other inputs 2</h2>
+        <form action="/otherinputs2">
+          <!-- Sample request url -->
+          <!-- file:///D:/otherinputs2?volume=10&cowbell=60&story=++++It+was+a+dark+and+stormy+night...%0D%0A+++++fsdf+sfd -->
+          <div>
+            <input type="range" id="volume" name="volume" min="0" max="11" />
+            <label for="volume">Volume</label>
+          </div>
+          <div>
+            <input
+              type="range"
+              id="cowbell"
+              name="cowbell"
+              min="0"
+              max="100"
+              value="90"
+              step="10"
+            />
+            <label for="cowbell">Cowbell</label>
+          </div>
+          <div>
+            <label for="story">Tell us your story:</label>
+            <textarea id="story" name="story" rows="5" cols="33">
+            It was a dark and stormy night...
+            </textarea>
+          </div>
+          <button>Submit</button>
+        </form>
+        <br />
+      </section>
     </main>
   </body>
 </html>
