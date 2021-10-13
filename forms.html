@@ -15,23 +15,25 @@
     <main>
       <h2>Forms</h2>
       <form action="/notdefined">
+        <!-- Sample request url -->
+        <!-- file:///D:/notdefined?un=laka&pwd=7868&col=%23efdcdc&num=77 -->
         <div>
           <label for="un">username:</label>
-          <input id="un" type="text" placeholder="username" />
+          <input id="un" type="text" placeholder="username" name="un"/>
         </div>
         <div>
           <label for="pass">password:</label>
-          <input id="pass" type="password" placeholder="password" />
+          <input id="pass" type="password" placeholder="password" name="pwd"/>
         </div>
         <div>
           <label for="color">color:</label>
-          <input id="color" type="color" />
+          <input id="color" type="color" name="col"/>
         </div>
         <!-- second method of adding labels -->
         <div>
           <label>
             number:
-            <input type="number" placeholder="number" />
+            <input type="number" placeholder="number" name="num"/>
           </label>
         </div>
         <!-- This button inside form submits the form-->
