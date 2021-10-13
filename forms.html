@@ -20,7 +20,15 @@
           <!-- file:///D:/notdefined?un=laka&pwd=7868&col=%23efdcdc&num=77 -->
           <div>
             <label for="un">username:</label>
-            <input id="un" type="text" placeholder="username" name="un" />
+            <input
+              id="un"
+              type="text"
+              placeholder="username"
+              name="un"
+              minlength="3"
+              maxlength="20"
+              required
+            />
           </div>
           <div>
             <label for="pass">password:</label>
@@ -39,7 +47,13 @@
           <div>
             <label>
               number:
-              <input type="number" placeholder="number" name="num" />
+              <input
+                type="number"
+                placeholder="number"
+                name="num"
+                min="0"
+                max="10"
+              />
             </label>
           </div>
           <!-- This button inside form submits the form-->
@@ -147,6 +161,38 @@
             <textarea id="story" name="story" rows="5" cols="33">
             It was a dark and stormy night...
             </textarea>
+          </div>
+          <button>Submit</button>
+        </form>
+        <br />
+      </section>
+      <section>
+        <h2>Form with validations</h2>
+        <!-- Sample request url -->
+        <!-- file:///D:/formvalid?first=asda&username=sfdsd&email=sf%40j&website=http%3A%2F%2Fsome -->
+        <form action="/formvalid">
+          <div>
+            <label for="first">Enter First Name</label>
+            <input type="text" id="first" name="first" required />
+          </div>
+          <div>
+            <label for="user">Username</label>
+            <input
+              type="text"
+              id="user"
+              name="username"
+              minlength="5"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website" />
           </div>
           <button>Submit</button>
         </form>
