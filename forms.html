@@ -13,40 +13,114 @@
       </nav>
     </header>
     <main>
-      <h2>Forms</h2>
-      <form action="/notdefined">
-        <!-- Sample request url -->
-        <!-- file:///D:/notdefined?un=laka&pwd=7868&col=%23efdcdc&num=77 -->
-        <div>
-          <label for="un">username:</label>
-          <input id="un" type="text" placeholder="username" name="un"/>
-        </div>
-        <div>
-          <label for="pass">password:</label>
-          <input id="pass" type="password" placeholder="password" name="pwd"/>
-        </div>
-        <div>
-          <label for="color">color:</label>
-          <input id="color" type="color" name="col"/>
-        </div>
-        <!-- second method of adding labels -->
-        <div>
-          <label>
-            number:
-            <input type="number" placeholder="number" name="num"/>
-          </label>
-        </div>
-        <!-- This button inside form submits the form-->
+      <section>
+        <h2>Basic Form</h2>
+        <form action="/notdefined">
+          <!-- Sample request url -->
+          <!-- file:///D:/notdefined?un=laka&pwd=7868&col=%23efdcdc&num=77 -->
+          <div>
+            <label for="un">username:</label>
+            <input id="un" type="text" placeholder="username" name="un" />
+          </div>
+          <div>
+            <label for="pass">password:</label>
+            <input
+              id="pass"
+              type="password"
+              placeholder="password"
+              name="pwd"
+            />
+          </div>
+          <div>
+            <label for="color">color:</label>
+            <input id="color" type="color" name="col" />
+          </div>
+          <!-- second method of adding labels -->
+          <div>
+            <label>
+              number:
+              <input type="number" placeholder="number" name="num" />
+            </label>
+          </div>
+          <!-- This button inside form submits the form-->
+          <button>Submit</button>
+          <!-- This button inside form submits the form-->
+          <button type="submit">Submit</button>
+          <!-- This button inside form submits the form-->
+          <input type="submit" value="click me" />
+          <!-- This button inside form does not submit the form-->
+          <button type="button">Does not Submit</button>
+        </form>
+        <!-- This button outside form does not submit the form-->
         <button>Submit</button>
-        <!-- This button inside form submits the form-->
-        <button type="submit">Submit</button>
-        <!-- This button inside form submits the form-->
-        <input type="submit" value="click me" />
-        <!-- This button inside form does not submit the form-->
-        <button type="button">Does not Submit</button>
-      </form>
-      <!-- This button outside form does not submit the form-->
-      <button>Submit</button>
+        <br />
+      </section>
+      <section>
+        <h2>Form with other inputs</h2>
+        <form action="/otherinputs">
+          <!-- Sample request url -->
+          <!-- file:///D:/otherinputs?agree=on&notifications=on&product_color=blue&pets=hamster&vehicles=tuktuk -->
+          <div>
+            <label for="agree">Agree</label>
+            <input id="agree" type="checkbox" name="agree" checked />
+          </div>
+
+          <div>
+            <label for="noti">Enable Notifications</label>
+            <input id="noti" type="checkbox" name="notifications" />
+          </div>
+          <div>
+            <label for="Yello">Yellow:</label>
+            <input
+              id="product_color_yellow"
+              type="radio"
+              name="product_color"
+              value="yellow"
+            />
+          </div>
+          <div>
+            <label for="product_color_blue">Blue:</label>
+            <input
+              id="product_color_blue"
+              type="radio"
+              name="product_color"
+              value="blue"
+            />
+          </div>
+          <div>
+            <label for="product_color_red">Red:</label>
+            <input
+              id="product_color_red"
+              type="radio"
+              name="product_color"
+              value="red"
+            />
+          </div>
+          <div>
+            <label for="pet-select">Choose a pet:</label>
+            <select name="pets" id="pet-select">
+              <option value="">--Please choose an option--</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="hamster">Hamster</option>
+              <option value="parrot">Parrot</option>
+              <option value="spider">Spider</option>
+              <option value="goldfish">Goldfish</option>
+            </select>
+          </div>
+          <div>
+            <label for="vehicle-select">Choose a vehicle:</label>
+            <select name="vehicles" id="vehicle-select">
+              <option value="">--Please choose an option--</option>
+              <option value="tuktuk">tuktuk</option>
+              <option value="car" selected>car</option>
+              <option value="van">van</option>
+            </select>
+          </div>
+          <button>Submit</button>
+        </form>
+        <br />
+      </section>
     </main>
   </body>
 </html>
