@@ -4,26 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Forms</title>
   </head>
   <body>
     <header>
+      <a href="index.html"
+        ><div id="main_heading">Front End Basics Demo Website</div></a
+      >
       <nav>
-        <a href="index.html">Home</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="forms.html">Forms Demo</a>
+        <a href="https://www.google.com">Visit Google</a>
       </nav>
     </header>
     <main>
-      <section>
+      <section class="form_section">
         <h2>Basic Form</h2>
         <form action="/notdefined">
           <!-- Sample request url -->
           <!-- file:///D:/notdefined?un=laka&pwd=7868&col=%23efdcdc&num=77 -->
           <div>
-            <label for="un">username:</label>
+            <label for="un">Username</label> <br />
             <input
               id="un"
               type="text"
-              placeholder="username"
+              placeholder="Jhon"
               name="un"
               minlength="3"
               maxlength="20"
@@ -31,45 +41,43 @@
             />
           </div>
           <div>
-            <label for="pass">password:</label>
-            <input
-              id="pass"
-              type="password"
-              placeholder="password"
-              name="pwd"
-            />
+            <label for="pass">Password</label> <br />
+            <input id="pass" type="password" name="pwd" />
           </div>
           <div>
-            <label for="color">color:</label>
+            <label for="color">Color</label>
             <input id="color" type="color" name="col" />
           </div>
           <!-- second method of adding labels -->
           <div>
             <label>
-              number:
+              Number
               <input
                 type="number"
-                placeholder="number"
+                placeholder="0"
                 name="num"
                 min="0"
                 max="10"
               />
             </label>
+            <br />
           </div>
-          <!-- This button inside form submits the form-->
-          <button>Submit</button>
-          <!-- This button inside form submits the form-->
-          <button type="submit">Submit</button>
-          <!-- This button inside form submits the form-->
-          <input type="submit" value="click me" />
-          <!-- This button inside form does not submit the form-->
-          <button type="button">Does not Submit</button>
+          <div class="buttons">
+            <!-- This button inside form submits the form-->
+            <button>Submit</button>
+            <!-- This button inside form submits the form-->
+            <button type="submit">Submit</button>
+            <!-- This button inside form submits the form-->
+            <input type="submit" value="click me" />
+            <!-- This button inside form does not submit the form-->
+            <button type="button">Does not Submit</button>
+          </div>
         </form>
         <!-- This button outside form does not submit the form-->
-        <button>Submit</button>
+        <button class="buttons">Submit</button>
         <br />
       </section>
-      <section>
+      <section class="form_section">
         <h2>Form with other inputs</h2>
         <form action="/otherinputs">
           <!-- Sample request url -->
@@ -131,11 +139,10 @@
               <option value="van">van</option>
             </select>
           </div>
-          <button>Submit</button>
+          <button class="buttons">Submit</button>
         </form>
-        <br />
       </section>
-      <section>
+      <section class="form_section">
         <h2>Form with other inputs 2</h2>
         <form action="/otherinputs2">
           <!-- Sample request url -->
@@ -162,21 +169,20 @@
             It was a dark and stormy night...
             </textarea>
           </div>
-          <button>Submit</button>
+          <button class="buttons">Submit</button>
         </form>
-        <br />
       </section>
-      <section>
+      <section class="form_section">
         <h2>Form with validations</h2>
         <!-- Sample request url -->
         <!-- file:///D:/formvalid?first=asda&username=sfdsd&email=sf%40j&website=http%3A%2F%2Fsome -->
         <form action="/formvalid">
           <div>
-            <label for="first">Enter First Name</label>
+            <label for="first">Enter First Name</label> <br />
             <input type="text" id="first" name="first" required />
           </div>
           <div>
-            <label for="user">Username</label>
+            <label for="user">Username</label> <br />
             <input
               type="text"
               id="user"
@@ -187,16 +193,15 @@
             />
           </div>
           <div>
-            <label for="email">Email</label>
+            <label for="email">Email</label> <br />
             <input type="email" id="email" name="email" required />
           </div>
           <div>
-            <label for="website">Website</label>
+            <label for="website">Website</label> <br />
             <input type="url" id="website" name="website" />
           </div>
-          <button>Submit</button>
+          <button class="buttons">Submit</button>
         </form>
-        <br />
       </section>
     </main>
   </body>
