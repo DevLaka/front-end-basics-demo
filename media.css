@@ -1,0 +1,18 @@
+@media (width: 600px) {
+  #main_section {
+    background-color: green;
+  }
+}
+
+/* main section becomes blue when the when width is atleast 100px*/
+@media (min-width: 1000px) {
+  #main_section {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+  #main_section {
+    background-color: pink;
+  }
+}
