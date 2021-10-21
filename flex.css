@@ -1,0 +1,246 @@
+.flex_headings {
+  padding: 0 3rem;
+}
+
+main section:not(:first-child) {
+  padding: 3rem 0;
+}
+
+#no_flex_container {
+  background-color: #bed8e5;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid grey;
+}
+
+#no_flex_container div {
+  width: 75px;
+  height: 75px;
+}
+
+#flex_on_container {
+  display: flex;
+  background-color: #bed8e5;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid grey;
+}
+
+.flex_container {
+  background-color: #bed8e5;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid grey;
+}
+
+.flex_container div {
+  width: 75px;
+  height: 75px;
+}
+
+#flex_direction_row_container {
+  display: flex;
+  flex-direction: row;
+}
+
+#flex_direction_row_reverse_container {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #bed8e5;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid grey;
+}
+
+#flex_direction_column_container {
+  display: flex;
+  flex-direction: column;
+}
+
+#flex_direction_column_reverse_container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#justify_content_flex_start_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#justify_content_flex_end_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#justify_content_center_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#justify_content_space_between_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#justify_content_space_around_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#justify_content_space_evenly_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#flex_wrap_wrap {
+  /* Making container width smaller, so that i can demo flex wrap */
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#flex_wrap_wrap_reverse {
+  /* Making container width smaller, so that i can demo flex wrap */
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+#align-items-flex-start {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#align-items-flex-end {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+#align-items-center div {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+#align-items-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#align-items-baseline div {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+#align-items-baseline {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#align-content-center {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#align-content-flex-start {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+#align-content-space-between {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+#align-content-space-around {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+#align-self-center {
+  display: flex;
+  flex-direction: row;
+}
+
+#align-self-center div:nth-of-type(3) {
+  align-self: center;
+}
+
+#align-self-flex-end {
+  display: flex;
+  flex-direction: row;
+}
+
+#align-self-flex-end div:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+#flex-basis {
+  display: flex;
+  flex-direction: row;
+}
+
+#flex-basis div {
+  flex-basis: 250px;
+}
+
+#flex-grow {
+  display: flex;
+  flex-direction: row;
+}
+
+#flex-grow div {
+  flex-basis: 200px;
+}
+
+#flex-grow div:nth-of-type(3) {
+  flex-grow: 1;
+}
+
+#flex-grow div:nth-of-type(5) {
+  flex-grow: 2;
+}
+
+#flex-shrink {
+  display: flex;
+  flex-direction: row;
+}
+
+#flex-shrink div {
+  flex-basis: 500px;
+}
+
+#flex-shrink div:nth-of-type(3) {
+  flex-shrink: 3;
+}
+
+#flex-shrink div:nth-of-type(5) {
+  flex-shrink: 2;
+}

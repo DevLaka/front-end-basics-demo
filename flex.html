@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="flex.css" />
+    <title>Front End Basics Demo Website - Flex Demo</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><div id="main_heading">Front End Basics Demo Website</div></a
+      >
+      <nav>
+        <a href="aboutMe.html">About Me</a>
+        <a href="forms.html">Forms Demo</a>
+        <a href="flex.html">Flex Demo</a>
+        <a href="https://www.google.com">Visit Google</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2 class="flex_headings">1. No Flex</h2>
+        <div id="no_flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+      </section>
+      <section>
+        <h2 class="flex_headings">2 . Flex On</h2>
+        <div id="flex_on_container" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+      </section>
+      <section>
+        <h2 class="flex_headings">3. Flex Direction</h2>
+        <h3 class="flex_headings">Determines main axis direction</h3>
+        <h3 class="flex_headings">3.1 Flex Direction - row (Default)</h3>
+        <div id="flex_direction_row_container" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">3.2 Flex Direction - row reverse</h3>
+        <div id="flex_direction_row_reverse_container" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">3.3 Flex Direction - column</h3>
+        <div id="flex_direction_column_container" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">3.4 Flex Direction - column reverse</h3>
+        <div
+          id="flex_direction_column_reverse_container"
+          class="flex_container"
+        >
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+      </section>
+      <section>
+        <h2 class="flex_headings">4. Justify content</h2>
+        <h3 class="flex_headings">
+          Determines how the content is distributed across the main axis
+        </h3>
+        <h3 class="flex_headings">
+          4.1 Justify content - flex-start (Default)
+        </h3>
+        <div id="justify_content_flex_start_container" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">4.2 Justify content - flex-end</h3>
+        <div id="justify_content_flex_end_container" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">4.3 Justify content - center</h3>
+        <div id="justify_content_center_container" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">4.4 Justify content - space-between</h3>
+        <div
+          id="justify_content_space_between_container"
+          class="flex_container"
+        >
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">4.5 Justify content - space-around</h3>
+        <div id="justify_content_space_around_container" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">4.6 Justify content - space-evenly</h3>
+        <div id="justify_content_space_evenly_container" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">
+          4.7 NOTE: These attributes applies for row-direction: column as well
+        </h3>
+      </section>
+      <section>
+        <h2 class="flex_headings">5. Flex Wrap</h2>
+        <h3 class="flex_headings">
+          Determines whether elements are going to wrap along the main axis onto
+          a new line
+        </h3>
+        <h3 class="flex_headings">5.1 Flex Wrap - wrap</h3>
+        <div id="flex_wrap_wrap" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">5.2 Flex Wrap - wrap-reverse</h3>
+        <h3 class="flex_headings">
+          Note: Now, cross axis goes from bottom to top
+        </h3>
+        <div id="flex_wrap_wrap_reverse" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">
+          Note: Flex wrap can explicity set to no-wrap
+        </h3>
+      </section>
+      <section>
+        <h2 class="flex_headings">6. Align items</h2>
+        <h3 class="flex_headings">
+          Determines how the content is distributed across the cross axis
+        </h3>
+        <h3 class="flex_headings">6.1 Align items - flex-start (Default)</h3>
+        <div id="align-items-flex-start" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">6.2 Align items - flex-end</h3>
+        <div id="align-items-flex-end" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">6.2 Align items - center</h3>
+        <h3 class="flex_headings">
+          Note: To align items horizontally and vertically both, we can set
+          align-items: center and justify-content: center.
+        </h3>
+        <div id="align-items-center" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">6.2 Align items - center (with content)</h3>
+        <h3 class="flex_headings">
+          Note: The element are centered based on the center of the element.
+        </h3>
+        <div id="align-items-center" class="flex_container">
+          <div style="background-color: #264653">D</div>
+          <div style="background-color: #2a9d8f; height: 200px">E</div>
+          <div
+            style="background-color: #e9c46a; height: 300px; font-size: 80px"
+          >
+            V
+          </div>
+          <div style="background-color: #f4a261">L</div>
+          <div style="background-color: #e76f51; height: 300px">A</div>
+          <div style="background-color: #264653; font-size: 60px">K</div>
+          <div style="background-color: #2a9d8f; height: 200px">A</div>
+        </div>
+        <h3 class="flex_headings">6.2 Align items - baseline</h3>
+        <h3 class="flex_headings">
+          Note: The element are centered based on baseline of the text.
+        </h3>
+        <div id="align-items-baseline" class="flex_container">
+          <div style="background-color: #264653">D</div>
+          <div style="background-color: #2a9d8f; height: 200px">E</div>
+          <div
+            style="background-color: #e9c46a; height: 300px; font-size: 80px"
+          >
+            V
+          </div>
+          <div style="background-color: #f4a261">L</div>
+          <div style="background-color: #e76f51; height: 300px">A</div>
+          <div style="background-color: #264653; font-size: 60px">K</div>
+          <div style="background-color: #2a9d8f; height: 200px">A</div>
+        </div>
+      </section>
+      <section>
+        <h2 class="flex_headings">7. Aling content</h2>
+        <h3 class="flex_headings">
+          Determines how space between content is distributed across the cross
+          axis but only when we have multiple rows or columns. Only applicable
+          when flew wrap is set to wrap or wrap-reverse.
+        </h3>
+        <h3 class="flex_headings">7.1 Aling content - center</h3>
+        <div id="align-content-center" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">7.2 Aling content - flex-start</h3>
+        <div id="align-content-flex-start" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">7.3 Aling content - space-between</h3>
+        <div id="align-content-space-between" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">7.4 Aling content - space-around</h3>
+        <div id="align-content-space-around" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+      </section>
+      <section>
+        <h2 class="flex_headings">8. Aling self</h2>
+        <h3 class="flex_headings">Applied to the flex item.</h3>
+        <h3 class="flex_headings">8. Aling self - center</h3>
+        <div id="align-self-center" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">8.2 Aling content - flex-end</h3>
+        <div id="align-self-flex-end" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+        <h3 class="flex_headings">
+          Note: There are more values for Aling content proptery than the
+          displayed 2.
+        </h3>
+      </section>
+      <section>
+        <h2 class="flex_headings">9. Flex Basis</h2>
+        <h3 class="flex_headings">
+          Define the initial size of an elemene before additional space is
+          distriubted.
+        </h3>
+        <div id="flex-basis" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+      </section>
+      <section>
+        <h2 class="flex_headings">10. Flex Grow</h2>
+        <h3 class="flex_headings">
+          Determines how the elements consume if only there is addtional space
+        </h3>
+        <div id="flex-grow" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+      </section>
+      <section>
+        <h2 class="flex_headings">11. Flex Shrink</h2>
+        <h3 class="flex_headings">
+          Determines how the elements shrink when ther is no enough space
+        </h3>
+        <div id="flex-shrink" class="flex_container">
+          <div style="background-color: #264653"></div>
+          <div style="background-color: #2a9d8f"></div>
+          <div style="background-color: #e9c46a"></div>
+          <div style="background-color: #f4a261"></div>
+          <div style="background-color: #e76f51"></div>
+        </div>
+      </section>
+      <section>
+        <h2 class="flex_headings">12. Flex Shorthand</h2>
+        <h3 class="flex_headings">Refer MDN for the flex Shorthand.</h3>
+      </section>
+    </main>
+  </body>
+</html>
